@@ -50,7 +50,7 @@ $(document).ready(function() {
             activities: ["Hiking", "Fishing"],
             description: "Visit the King and Queen Seat, a dramatic rock overlook.",
             url: "https://dnr.maryland.gov/publiclands/Pages/central/rocks.aspx",
-            image: "img/rocks.jpg"
+            image: "img/rocks.JPG"
         },
         {
             name: "Sandy Point State Park",
