@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Maryland state parks, outdoor activities, and recreation areas.">
+
+    <title>Maryland Parks & Nature | Explore Maryland</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/javascript.js" defer></script>
+</head>
+
+<body id="parks-page">
+
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span>Explore</span>
+                <strong>Maryland</strong>
+            </a>
+
+            <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <svg width="30" height="30" viewBox="0 0 30 30">
+                    <path d="M0,5 30,5" stroke="currentColor" stroke-width="3"/>
+                    <path d="M0,14 30,14" stroke="currentColor" stroke-width="3"/>
+                    <path d="M0,23 30,23" stroke="currentColor" stroke-width="3"/>
+                </svg>
+            </button>
+
+            <ul id="top-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parks.html">Parks & Nature</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="parks">
+            <div class="section-heading">
+                <h1>Maryland Parks & Nature</h1>
+                <p>Discover outdoor recreation throughout the state.</p>
+            </div>
+
+            <div class="park-filters">
+                <input
+                    type="search"
+                    id="park-search"
+                    placeholder="Search parks or counties..."
+                    aria-label="Search parks or counties"
+                >
+
+                <select id="region-filter" aria-label="Filter by region">
+                    <option value="">All Regions</option>
+                    <option value="Central">Central Maryland</option>
+                    <option value="Eastern">Eastern Shore</option>
+                    <option value="Southern">Southern Maryland</option>
+                    <option value="Western">Western Maryland</option>
+                </select>
+
+                <select id="activity-filter" aria-label="Filter by activity">
+                    <option value="">All Activities</option>
+                    <option value="Hiking">Hiking</option>
+                    <option value="Camping">Camping</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Fishing">Fishing</option>
+                    <option value="Biking">Biking</option>
+                    <option value="Boating">Boating</option>
+                </select>
+            </div>
+
+            <p id="park-count" aria-live="polite"></p>
+
+            <div id="park-results" class="destination-grid"></div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Explore Maryland</p>
+    </footer>
+
+</body>
+</html>

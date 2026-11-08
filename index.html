@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover parks, historic sites, and destinations throughout Maryland.">
+
+    <title>Explore Maryland</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+</head>
+
+<body id="home">
+    <div class="container">
+
+        <header>
+            
+<nav>
+    <div class="container">
+    <a href="index.html" class="logo">
+        <span>Explore</span>
+        <strong>Maryland</strong>
+    </a>
+
+    <button id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg width="30" height="30" viewBox="0 0 30 30">
+            <path d="M0,5 30,5" stroke="currentColor" stroke-width="3"/>
+            <path d="M0,14 30,14" stroke="currentColor" stroke-width="3"/>
+            <path d="M0,23 30,23" stroke="currentColor" stroke-width="3"/>
+        </svg>
+    </button>
+
+    <ul id="top-menu">
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="parks.html">Parks & Nature</a></li>
+    </ul>
+</div>
+</nav>
+
+        </header>
+
+        <main>
+
+            <div id="hero-section">
+                <div class="hero-card card">
+                    <h1>Discover Maryland</h1>
+                    <p>Explore the parks, history, and hidden gems of the Old Line State.</p>
+                    <a href="#explore" class="button-primary">Start Exploring</a>
+                </div>
+            </div>
+
+            <section id="explore">
+                <div class="section-heading">
+                    <h2>Explore Maryland</h2>
+                    <p>Find your next destination.</p>
+                </div>
+
+                <div class="destination-grid">
+                    
+                        <div class="destination-card patapsco">
+                            <img src="img/patapsco-valley.jpg" alt="Patapsco Valley State Park">
+                            <div class="destination-info">
+                                <h3>Patapsco Valley State Park</h3>
+                                <p>Discover scenic trails, waterfalls, and outdoor recreation.</p>
+                                <a class="button-primary" href="https://dnr.maryland.gov/publiclands/pages/central/patapsco.aspx" target="_blank" aria-label="Learn More about Patapsco Valley State Park">Learn More</a>
+                            </div>
+                        </div>
+                   
+                    
+                        <div class="destination-card assateague">
+                            <img src="img/assateague.jpg" alt="Assateague Island">
+                            <div class="destination-info">
+                                <h3>Assateague Island</h3>
+                                <p>Experience coastal beaches and Maryland's famous wild horses.</p>
+                                <a class="button-primary" href="https://www.nps.gov/asis/index.htm" target="_blank" aria-label="Learn More about Assateague Island">Learn More</a>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="destination-card annapolis">
+                            <img src="img/annapolis.jpg" alt="Historic Annapolis">
+                            <div class="destination-info">
+                                <h3>Historic Annapolis</h3>
+                                <p>Explore waterfront streets and centuries of American history.</p>
+                                <a class="button-primary" href="https://www.visitannapolis.org/" target="_blank" aria-label="Learn More about Annapolis">Learn More</a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </section>
+
+           
+
+        </main>
+
+        <footer>
+            <div class="container">
+
+                <h2>Contact Us</h2>
+                <p>Have a question or suggestion? Send us a message.</p>
+
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="button-primary">Send Message</button>
+                </form>
+                
+                <a href="index.html" class="logo">
+                    <span>Explore</span>
+                    <strong>Maryland</strong>
+                </a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
